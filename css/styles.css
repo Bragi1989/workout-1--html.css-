@@ -121,6 +121,80 @@ p {
     gap: 150px;
 }
 
+/*===========Partners=========*/
+
+.partners {
+    padding: 16px 0;
+}
+.partners-container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.partners-title {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: rgba(53, 83, 98, 0.8);
+}
+.partners-list {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.partners-more {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: .5px;
+    text-transform: uppercase;
+    color: rgba(53, 83, 98, 0.8);
+}
+/*=============Information=======*/
+.graphics {
+    width: 100%;
+    background-color: #f4f5f5;
+}
+.information {
+    padding-bottom: 140px;
+    background-color: #f4f5f5;
+}
+.information-text {
+    display: flex;
+}
+.information-title {
+    width: 80%;
+    font-weight: 400;
+    font-size: 31px;
+    line-height: 38px;
+    letter-spacing: 1.2px;
+    margin-right: 70px;
+}
+.information-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+.information-item {
+    width: 264px;
+}
+.information-subtitle {
+    margin: 0 0 4px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #003331;
+}
+.information-descr {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(53, 83, 98, 0.8);
+}
+
 /*=============Press=======*/
 
 .press {
