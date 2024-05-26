@@ -55,8 +55,9 @@ p {
 }
 .header-menu {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: right;
+    justify-content: space-between;
     padding-top: 17px;
     padding-bottom: 17px;
 }
@@ -120,6 +121,78 @@ p {
     display: flex;
     gap: 150px;
 }
+/*============ steps==========*/
+.steps {
+    padding: 120px 0;
+    background-color: #fff;
+}
+.steps-title {
+    margin: 0 auto 57px;
+    max-width: 720px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: 1.2px;
+    text-align: center;
+}
+.steps-list {
+    display: flex;
+    counter-reset: steps;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 758px;
+}
+.steps-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.steps-item--line {
+    position: relative;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+}
+.steps-item::before {
+    counter-increment: steps;
+    content: counter(steps);
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-bottom: 28px;
+    border-radius: 100%;
+    width: 48px;
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background: #014c48;
+}
+.steps__item--line::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -35px;
+    width: 100%;
+    height: 1px;
+    background: rgba(53, 83, 98, .2);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.steps-descr {
+    margin: 0;
+    max-width: 142px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(53, 83, 98, .8);
+}
 
 /*======== approach ==========*/
 
@@ -167,6 +240,45 @@ p {
 .approach-btn:hover,
 .approach-btn:focus {
     background: #00a1ff;
+}
+
+.approach-bottom {
+    padding: 24px 0;
+    background-color: #fff;
+}
+.approach-list{
+    display: flex;
+    gap: 95px;
+}
+.approach-item {
+    border-top: 1px solid rgba(53, 83, 98, .3);
+    color: rgba(53, 83, 98, 0.8);
+    padding-top: 16px;
+    padding-left: 32px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    background-position: left top 15px;
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+}
+.approach-item--TEDTalks {
+    background-image: url(../images/icons/Ted.png);
+}
+.approach-item--TheNewYorkTimes {
+background-image: url(../images/icons/TNYT.png);
+}
+.approach-item--StateScoop {
+background-image: url(../images/icons/SS.png);
+}
+.approach-item--AssociatedPress {
+background-image: url(../images/icons/AP.png);
+}
+.approach-item--Time {
+background-image: url(../images/icons/Time.png);
+}
+.approach-item--freethink {
+background-image: url(../images/icons/Freethink.png);
 }
 
 /*============ Info ==========*/
@@ -352,12 +464,16 @@ p {
     padding: 18px 0 18px 32px;
     }
 .press-card-autor {
+    margin: -18px 0;
+    padding: 18px 0 18px 32px;
     font-weight: 400;
     font-size: 11px;
     line-height: 16px;
     text-transform: uppercase;
     color: rgba(53, 83, 98, 0.8);
-
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: left top 15px;
 }
 .press-card-date {
     font-weight: 400;
@@ -366,6 +482,7 @@ p {
     letter-spacing: .5px;
     text-transform: uppercase;
     color: rgba(53, 83, 98, 0.8);
+    background-position: left top 15px;
 }
 .press-card-link {
     font-weight: 400;
@@ -374,6 +491,24 @@ p {
     color: inherit;
 }
 
+.press-card-autor--ted {
+    background-image: url(../images/icons/Ted.png);
+}
+.press-card-autor--CN {
+background-image: url(../images/icons/CN.png);
+}
+.press-card-autor--DJ {
+background-image: url(../images/icons/DJ.png);
+}
+.press-card-autor--TNYT {
+background-image: url(../images/icons/TNYT.png);
+}
+.press-card-autor--C1 {
+background-image: url(../images/icons/C1.png);
+}
+.press-card-autor--RC {
+background-image: url(../images/icons/RC.png);
+}
 
 /* =========Where========= */
 
